@@ -46,43 +46,6 @@ npm run dev
 
 Open **http://localhost:5173**
 
----
-
-## 🌐 Deployment Guide
-
-### Frontend → Vercel / Netlify
-1. Connect your repo on [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
-2. Set **root directory** to `frontend`
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Set env var: `VITE_API_URL=https://your-backend-url.com`
-
-### Backend → Render / Railway
-1. Set **root directory** to `backend`
-2. Start command: `node index.js`
-3. Set env var: `ML_SERVICE_URL=https://your-ml-url.com`
-
-### ML Model → Render / Railway
-1. Set **root directory** to `ml_model`
-2. Build command: `pip install -r requirements.txt`
-3. Start command: `python app.py`
-
----
-
-## 🔌 API Reference
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /health` | GET | Backend health check |
-| `POST /api/recommend` | POST | Get course recommendations |
-
-```json
-// POST /api/recommend
-{ "user_interest": "machine learning" }
-
-// Response
-{ "recommended_courses": [ { "title": "...", "platform": "...", "rating": "4.8", ... } ] }
-```
 
 ---
 
