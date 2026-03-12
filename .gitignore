@@ -1,0 +1,27 @@
+# ── Node ──────────────────────────────
+node_modules/
+dist/
+.cache/
+*.log
+
+# ── Python ────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── Environment / secrets ─────────────
+.env
+.env.local
+.env.production
+
+# ── Vite / Build ─────────────────────
+frontend/dist/
+
+# ── OS ───────────────────────────────
+.DS_Store
+Thumbs.db

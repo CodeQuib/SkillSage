@@ -1,0 +1,13 @@
+{
+  "name": "skillsage",
+  "version": "1.0.0",
+  "description": "SkillSage – AI-powered course recommendation system",
+  "private": true,
+  "scripts": {
+    "start:ml":       "cd ml_model && python app.py",
+    "start:backend":  "cd backend && node index.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm run build"
+  }
+}
